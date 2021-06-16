@@ -353,12 +353,14 @@ color: #fff;
 
 .contact
 {
+
     background: #000;
     display: flex; 
     justify-content: center;
 align-items: center;
 flex-direction: column;
 }
+
 .contact .contactForm{
     position: relative;
     width: 60%;
@@ -400,7 +402,8 @@ resize: none;
     max-width: 150px;
 }
 
-@media(max-width: 1200px) {
+
+@media(max-width: 1050px) {
     .banner .imgSidebar {
         display: none;
     }
@@ -412,7 +415,7 @@ resize: none;
  left: 40px;
 
     }
-    .toggle {
+    .toggle { 
         right: 40px;
     }
     .sci {
@@ -452,9 +455,41 @@ flex-direction: column;
         width: 100%; 
 
     }
+    .contact .contactForm .row textarea {
+        width: 51%;
+    }
 }
 
 
-
-
+   
+@media(max-width: 400px) {
+    .banner {
+        height: 120vh;
+    }
  
+
+  
+}
+
+ @media(max-width: 321px) {
+    .banner {
+        height: 150vh;
+    }
+    
+} 
+@media (max-width: 825px) and (orientation: landscape) { 
+    .banner {
+        height: 150vh; 
+    }
+}
+@media (max-width: 700px) and (orientation: landscape) { 
+    .banner {
+        height: 175vh; 
+    }
+}
+
+@media (max-width: 660px) and (orientation: landscape) { 
+    .banner {
+        height: 200vh; 
+    }
+}
