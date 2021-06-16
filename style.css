@@ -68,7 +68,10 @@ section {
   justify-content: center; 
   align-items: center;
   padding: 100px;
+
+  animation: fadeIn 1.5s linear;
 }
+
 .sidebar {
   position: absolute;
   top: 0;
@@ -94,6 +97,7 @@ section {
 .banner .contentBox h4{
     font-size: 1.5em;
     color: #333;
+    padding: 10px 0;
     font-weight: 300;
 }
 .banner .contentBox h4 span {
@@ -111,6 +115,8 @@ p {
     font-size: 1.1em;
     margin: 20px 0;
     font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 35px;
 }
 .btn {
     background: #00bcd4;
@@ -199,6 +205,7 @@ opacity: 1;
     font-size: 1.8em;
     font-weight: 700; 
     letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 .title p {
     max-width: 700px;
@@ -209,6 +216,7 @@ opacity: 1;
     background-color: black;
     position: absolute;
     left: 50%; 
+   
     transform: translateX(-50%);
     bottom: -10px;
     width: 60px;
@@ -238,6 +246,7 @@ color: #fff;
 .about .content .textBox {
     min-width: 49%;
     width: 49%;
+    
  
 }
 .about .content .textBox p {
@@ -464,7 +473,7 @@ flex-direction: column;
    
 @media(max-width: 400px) {
     .banner {
-        height: 120vh;
+        height: 130vh;
     }
  
 
@@ -473,23 +482,34 @@ flex-direction: column;
 
  @media(max-width: 321px) {
     .banner {
-        height: 150vh;
+        height: 170vh;
     }
     
 } 
 @media (max-width: 825px) and (orientation: landscape) { 
     .banner {
-        height: 150vh; 
+        height: 155vh; 
     }
 }
 @media (max-width: 700px) and (orientation: landscape) { 
     .banner {
-        height: 175vh; 
+        height: 180vh; 
     }
 }
 
 @media (max-width: 660px) and (orientation: landscape) { 
     .banner {
-        height: 200vh; 
+        height: 205vh; 
     }
 }
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} 
+
