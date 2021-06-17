@@ -440,16 +440,18 @@ resize: none;
 flex-direction: column;
     }
     .about .content .textBox {
-        min-width: 100%;
-        width: 100%;
+        
+        width: 75%;
     }
     .about .content .imgBox {
         margin-left: 0;
+        display: flex;
+        justify-content: center;
         width: 100%;
     }
     .about .content .imgBox img {
 
-        width: 100%;
+        width: 75%;
     }
 
     .technologies .content .technologiesBox{
