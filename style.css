@@ -14,21 +14,16 @@
   width: 50px;
   right: 30px;
   height: 50px;
-  background-color: black;
-  background-image: url(/img/menu.png);
-  background-size: 30px;
-  background-position: center;
-  background-repeat: no-repeat;
   cursor: pointer;
   z-index: 1000;
 }
 
 .toggle.active {
-  background-image: url(/img/close.png);
   background-size: 25px;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+  transform: rotateY(-90%);
 }
 
 /* Banner section */
@@ -233,6 +228,7 @@ color: #fff;
     /* about section */
 
 .about {
+    width: 100%;
     background: #000;
 }
 
@@ -429,6 +425,7 @@ resize: none;
     }
     .toggle { 
         right: 40px;
+        min-height: 0;
     }
     .sci {
         left: 40px;
